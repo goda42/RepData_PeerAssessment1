@@ -68,7 +68,7 @@ Imputing the data with the mean values raised the values of all the statistics.
 
 ## Are there differences in activity patterns between weekdays and weekends?
 
-```{r Weekdays/Weekends,echo=TRUE}
+```{r Weekdays-Weekends,echo=TRUE}
 data2=data_impute
 data2$dayofweek=weekdays(as.Date(data$date))
 

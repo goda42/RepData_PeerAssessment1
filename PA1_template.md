@@ -176,4 +176,4 @@ avg_week_act=summarize(weeks,mean(steps))
 xyplot(`mean(steps)` ~ interval | weektype, data=avg_week_act,type='l',layout=c(1,2),ylab="Avg # of Steps",xlab="Interval")
 ```
 
-![](PA1_template_files/figure-html/Weekdays/Weekends-1.png)<!-- -->
+![](PA1_template_files/figure-html/Weekdays-Weekends-1.png)<!-- -->
