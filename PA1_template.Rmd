@@ -16,7 +16,7 @@ data=read.csv("activity.csv")
 ```
 
 ## What is mean total number of steps taken per day?
-```{r Mean steps per day, echo=TRUE}
+```{r Mean_steps_per_day, echo=TRUE}
 daily=group_by(data,date)
 numsteps=summarize(daily,sum(steps,na.rm=TRUE))
 str(numsteps)
@@ -27,7 +27,7 @@ lines(numsteps,type="h",lwd=7)
 
 
 ## What is the average daily activity pattern?
-```{r Daily Activity, echo=TRUE}
+```{r Daily_Activity, echo=TRUE}
 activity=group_by(data,interval)
 avg_act=summarize(activity,mean(steps,na.rm=TRUE))
 plot(avg_act,type='l',lwd=2,xlab="Time Interval",ylab="Average # of Steps")
@@ -40,7 +40,7 @@ cat("The maximum interval in the average activity is at interval",max_interval,"
 ```
 
 ## Imputing missing values
-```{r Imputing Missing Values,echo=TRUE}
+```{r Imputing_Missing_Values,echo=TRUE}
 num_nas=sum(is.na(data$steps))
 cat("There are",num_nas,"NAs in the dataset")
 

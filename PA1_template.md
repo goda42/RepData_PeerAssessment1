@@ -70,7 +70,7 @@ plot(numsteps,type="h",xlab="Date",ylab="Number of steps")
 lines(numsteps,type="h",lwd=7)
 ```
 
-![](PA1_template_files/figure-html/Mean steps per day-1.png)<!-- -->
+![](PA1_template_files/figure-html/Mean_steps_per_day-1.png)<!-- -->
 
 
 ## What is the average daily activity pattern?
@@ -81,7 +81,7 @@ avg_act=summarize(activity,mean(steps,na.rm=TRUE))
 plot(avg_act,type='l',lwd=2,xlab="Time Interval",ylab="Average # of Steps")
 ```
 
-![](PA1_template_files/figure-html/Daily Activity-1.png)<!-- -->
+![](PA1_template_files/figure-html/Daily_Activity-1.png)<!-- -->
 
 ```r
 max_steps=max(avg_act)
@@ -150,7 +150,7 @@ plot(numsteps_imputed,type="h",xlab="Date",ylab="Number of steps")
 lines(numsteps_imputed,type="h",lwd=7)
 ```
 
-![](PA1_template_files/figure-html/Imputing Missing Values-1.png)<!-- -->
+![](PA1_template_files/figure-html/Imputing_Missing_Values-1.png)<!-- -->
 
 Imputing the data with the mean values raised the values of all the statistics.
 
